@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    try
+    {
+    	Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); // total cases 
+        int x,y;
+        for(int i=0;i<n;i++){
+            x=sc.nextInt();
+            y=sc.nextInt();
+            int z=x%y;
+            System.out.println(z);
+        }
+    }
+    catch(Exception e)
+    {
+        System.out.println(e);
+    }
+        
+	}
+}

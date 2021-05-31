@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	try {
+            Scanner sc=new Scanner(System.in);
+            int t=sc.nextInt();
+            for(int k=0;k<t;k++)
+            {
+                int a=sc.nextInt();
+                int b=sc.nextInt();
+                int sum=0;
+                for(int i=0;i<a;i++)
+                {
+                    sum=0;
+                    for(int j=1;j<=b;j++)
+                    {
+                        sum=sum+j;
+
+                    }
+                    b=sum;
+                }
+                System.out.println(sum);
+
+            }
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    
+	}
+}
